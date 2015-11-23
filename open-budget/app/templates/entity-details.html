@@ -1,6 +1,6 @@
 <div class="left-con">
 
-<h2 class='entity-name'><%= name %></h2>
+<h2 class='entity-name'><%= name %>
 <a href=""><h4 class='manof-name'>
 <% if ( kind === "association" ) { %>
     עמותה/חברה לתועלת הציבור מ.ר. <%= id %> (<a target="_blank" href="http://www.guidestar.org.il/organization/<%= id %>">מידע נוסף בגיידסטאר</a>)
@@ -9,7 +9,7 @@
 <% } else if ( kind === "municipality" ) { %>
     רשות מקומית
 <% } %>
-</h4></a>
+</h4></a></h2>
 
     <div class="left-info">
         <div class="info">
@@ -19,7 +19,8 @@
 &larr;&nbsp<%= exemptions.length %> התקשרויות עם <span class="total"></span>
 משרדים בסך <%= exemptions_sum == null ? 'לא ידוע' : number_with_commas(exemptions_sum==null? 0 : exemptions_sum) + ' ש"ח'%>
 </h3>
-<table class="exemption-table table table-expandable">
+            <div class="table-responsive">
+<table class="exemption-table table table-expandable table">
     <thead>
         <th>שם המשרד</th>
         <th style="width: 4%;">מס'</th>
@@ -36,7 +37,7 @@
 
 <% if ( supports.length > 0 ) { %>
 <h3 class="entity-title">&larr;&nbspתמיכות</h3>
-<table class="support-table table table-expandable">
+<table class="support-table table table-expandable table">
     <thead>
         <th>שנה</th>
         <th>נושא</th>
@@ -66,6 +67,7 @@
         <% } %>
     </tbody>
 </table>
+                </div>
             <div
         </div>
     </div>
