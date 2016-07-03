@@ -31,9 +31,9 @@ export default class EntityVizView extends Backbone.View {
 
   render (procurements, supports) {
     const COLORS = {
-      total: 'steelblue',
+      total: '#0b587d',
       procurement: "#807dba",
-      support: "#e08214"
+      support: "#FF698C"
     };
 
     let orders = {},
@@ -96,10 +96,10 @@ export default class EntityVizView extends Backbone.View {
       let total = 0, procurement = 0, support = 0;
 
       histogram_data[publisher].forEach((datum) => {
-        if ( datum.type === 'support' ) {
+        if ( datum.type === 'support') {
           support += datum.value;
         }
-        else if ( datum.type === 'procurement' ) {
+        else if ( datum.type === 'procurement') {
           procurement += datum.value;
         }
         total += datum.value;

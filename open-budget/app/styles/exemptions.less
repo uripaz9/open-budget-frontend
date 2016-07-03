@@ -633,15 +633,22 @@ div.exemptions-alerts {
     //padding-bottom: 3px;
     //box-shadow: 0 0 7px 0 rgba(0, 0, 0, .3);
     overflow-y: auto;
+    border-right: 7px solid #86888a;
+    border-radius: 5px;
+
+    &.footer_section {
+      border: none;
+      border-radius: 0;
+    }
   }
 
   .entity-name {
-    font-size: 25px;
+    font-size: 30px;
     border-bottom: 0;
     color: #1EB5FF;
     text-align: right;
     margin: 0;
-    padding: 30px 30px 10px;
+    padding: 40px 30px 10px;
     display: block;
   }
 
@@ -690,39 +697,43 @@ div.exemptions-alerts {
   .entity-title {
     padding: 0 30px;
     color: white;
-    font-size: 20px;
-    margin-bottom: 32px;
+    font-size: 24px;
+    margin-bottom: 50px;
     margin-top: 0;
   }
 
   .export-container {
     overflow: auto;
-    padding: 0 30px 30px;
+    //padding: 0 30px 30px;
+    margin: 0 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .export {
     float: right;
     display: inline-block;
-    padding-bottom: 15px;
+    //padding-bottom: 15px;
   }
 
   .export-purchasing {
     //background-color: #D8D8D8;
-    padding: 4px 15px;
+    padding: 4px 0 4px 15px;
     color: #262935;
     font-size: 14px;
-    border-radius: 60px;
+    //border-radius: 60px;
     float: right;
     margin-left: 11px;
     text-decoration: none;
-    border: 1px solid white;
+    //border: 1px solid white;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);;
     color: white;
 
-    &:hover {
-      background-color: #050D29;
-      border-color: #1EB5FF;
-      color: #1EB5FF;
-    }
+    //&:hover {
+    //  background-color: #050D29;
+    //  border-color: #1EB5FF;
+    //  color: #1EB5FF;
+    //}
 
     p {
       margin: 0;
@@ -739,21 +750,22 @@ div.exemptions-alerts {
 
   .export-exemptions {
     //background-color: #D8D8D8;
-    padding: 4px 15px;
+    padding: 4px 5px 4px 15px;
     color: #262935;
     font-size: 14px;
-    border-radius: 60px;
+    //border-radius: 60px;
     float: right;
     margin-left: 11px;
     text-decoration: none;
-    border: 1px solid white;
+    //border: 1px solid white;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);;
     color: white;
 
-    &:hover {
-      background-color: #050D29;
-      border-color: #1EB5FF;
-      color: #1EB5FF;
-    }
+    //&:hover {
+    //  background-color: #050D29;
+    //  border-color: #1EB5FF;
+    //  color: #1EB5FF;
+    //}
 
     p {
       margin: 0;
@@ -770,21 +782,20 @@ div.exemptions-alerts {
 
   .export-supports {
     //background-color: #D8D8D8;
-    padding: 4px 15px;
+    padding: 4px 5px 4px 15px;
     color: #262935;
     font-size: 14px;
-    border-radius: 60px;
+    //border-radius: 60px;
     float: left;
     text-decoration: none;
-    border: 1px solid white;
+    //border: 1px solid white;
     color: white;
 
-    &:hover {
-      background-color: #050D29;
-      border-color: #1EB5FF;
-      color: #1EB5FF;
-
-    }
+    //&:hover {
+    //  background-color: #050D29;
+    //  border-color: #1EB5FF;
+    //  color: #1EB5FF;
+    //}
 
     p {
       margin: 0;
@@ -1338,17 +1349,21 @@ div.exemptions-alerts {
     }
 
     .entity-name {
-      padding-right: 10px;
-      padding-bottom: 20px;
+      //padding-right: 10px;
+      //padding-bottom: 20px;
       font-size: 20px;
+      padding: 20px 15px;
+      margin: 0;
     }
 
     .entity-title {
-      padding-right: 10px;
-      font-size: 20px;
+      //padding-right: 10px;
+      font-size: 18px;
       //padding-bottom: 16px;
-      padding-bottom: 0;
-      margin-top: 0;
+      //padding-bottom: 0;
+      //margin-top: 0;
+      padding: 0 15px;
+      margin: 0;
     }
 
   }
@@ -1399,6 +1414,8 @@ div.exemptions-alerts {
   margin: 30px 30px 0;
   padding: 25px;
   overflow-y: auto;
+  border-right: 7px solid #807dba;
+  border-radius: 5px;
 
   .entity-title-top {
     display: block;
@@ -1580,7 +1597,8 @@ div.exemptions-alerts {
   -moz-box-shadow: inset 0px 12px 5px -6px rgba(0, 0, 0, 0.06);
   box-shadow: inset 0px 12px 5px -6px rgba(0, 0, 0, 0.06);
   border-top: none !important;
-  background-color: #1782B5;
+  //background-color: #1782B5;
+  background-color: #b2b3b7;
 }
 
 .table-purchasing-quarter {
@@ -1639,25 +1657,6 @@ div.exemptions-alerts {
   }
 }
 
-#entity-viz {
-  //width: 960px;
-  height: 460px;
-  margin: 0 30px;
-  overflow: hidden;
-  //background-color: white;
-}
-
-#entity-viz-pie {
-  display: inline-block;
-  width: 400px;
-  height: 100%;
-}
-
-#entity-viz-histogram {
-  display: inline-block;
-  width: 500px;
-}
-
 //-----------------------------------------------------------------------
 
 //support - section
@@ -1669,6 +1668,8 @@ div.exemptions-alerts {
   margin: 30px 30px 0;
   padding: 25px;
   overflow-y: auto;
+  border-right: 7px solid #FF698C;
+  border-radius: 5px;
 
   .entity-title-top {
     display: block;
@@ -1904,7 +1905,6 @@ div.exemptions-alerts {
   }
 }
 
-
 //----------------------------------------------------------------
 
 //modal
@@ -2118,10 +2118,121 @@ div.exemptions-alerts {
   }
 }
 
-#entity-viz-pie{
-  text-align: center;
+//----------------------------------------------------------------
+
+//viz
+
+//----------------------------------------------------------------
+
+#entity-viz {
+  margin: 0 30px;
+  overflow: hidden;
+  height: 680px;
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
 }
 
+.vis_row {
+  margin: 0;
+}
+
+.vis_title {
+  font-size: 21px;
+  display: block;
+  text-align: right;
+  margin-top: 22px;
+  //padding-right: 20px;
+}
+
+.vis_histogram {
+  position: relative;
+  height: 680px;
+  padding: 0 40px;
+
+  svg {
+    margin: auto;
+    position: absolute;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    display: block;
+    left: 50%;
+    overflow: visible;
+  }
+
+  .tick {
+    text {
+      -ms-transform: rotate(-90deg); /* IE 9 */
+      -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+      transform: translate(-15px, 18px) rotate(-90deg);
+      text-anchor: start !important;
+    }
+  }
+
+  .bar {
+    text {
+      display: none;
+    }
+  }
+}
+
+.vis_pie {
+  position: relative;
+  height: 680px;
+  background-color: #0b587d;
+  padding: 0 40px;
+
+  svg {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    left: 50%;
+  }
+
+  .vis_title {
+    color: white;
+  }
+}
+
+.domain {
+  display: none;
+}
+
+.declaration_col {
+  margin-top: 22px !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  span {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      top: 2px;
+      margin-left: 8px;
+      position: relative;
+    }
+
+    &.procurements_icon_color {
+      &:before {
+        background-color: #807dba;
+      }
+    }
+
+    &.support_icon_color {
+      &:before {
+        background-color: #FF698C;
+      }
+    }
+  }
+}
 
 //---------------------------------------------------------------------------------
 
@@ -2257,7 +2368,7 @@ div.exemptions-alerts {
 @media (max-width: 768px) {
 
   .purchasing_section {
-    margin: 30px 15px 20px;
+    margin: 0 15px 20px;
     padding: 0;
   }
 
@@ -2325,16 +2436,40 @@ div.exemptions-alerts {
 
   .entity-details .export-container {
     overflow: auto;
-    padding: 0 10px 30px;
+    padding: 15px 0;
+    margin: 0 15px;
   }
 
-  .entity-details .entity-title {
-    margin-bottom: 25px;
+  //.entity-details .entity-title {
+  //  margin-bottom: 25px;
+  //}
+  #entity-viz {
+    margin: 30px 15px 20px;
+    padding: 0;
+    height: 1165px;
   }
 
-}
+  .vis_title {
+    text-align: center;
+  }
 
+  .vis_histogram {
+    padding: 0 20px;
+    overflow: auto;
+  }
 
-#entity-viz {
-  height: 430px;
+  .vis_pie {
+    //padding: 0 20px;
+    padding: 0 70px;
+    height: 485px;
+  }
+
+  .declaration_col span {
+    display: block;
+    text-align: center;
+  }
+
+  .entity-details .left-info.footer_section{
+    display: none;
+  }
 }
