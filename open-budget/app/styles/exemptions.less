@@ -1605,58 +1605,6 @@ div.exemptions-alerts {
   margin: 20px 0;
 }
 
-.xs_titel {
-  padding: 10px 8px 15px;
-  display: block;
-  color: #86888A;
-
-  a {
-    padding-right: 5px;
-    color: #0B587D;
-    text-decoration: none;
-    display: inline-block;
-  }
-
-  .moreInfo {
-    border: 1px solid #1EB5FF;
-    border-radius: 50px;
-    margin-right: 5px;
-
-    .moreInfoText {
-      color: #1EB5FF;
-      padding: 5px 8px 5px 10px;
-      display: inline-block;
-
-      &:before {
-        content: "\e086";
-        position: relative;
-        top: 3px;
-        display: inline-block;
-        font-family: 'Glyphicons Halflings';
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        padding-left: 3px;
-        color: #1EB5FF;
-      }
-
-      &:hover {
-        color: white;
-
-        &:before {
-          color: white;
-        }
-      }
-    }
-
-    &:hover {
-      background-color: #1EB5FF;
-      color: white;
-    }
-  }
-}
-
 //-----------------------------------------------------------------------
 
 //support - section
@@ -1863,15 +1811,20 @@ div.exemptions-alerts {
     color: #0B587D;
     text-decoration: none;
     display: inline-block;
+
+    &.link{
+      border-left: 1px solid gray;
+      padding-left: 20px;
+    }
   }
 
   .moreInfo {
-    border: 1px solid #1EB5FF;
+    //border: 1px solid #86888A;
     border-radius: 50px;
     margin-right: 5px;
 
     .moreInfoText {
-      color: #1EB5FF;
+      color: #101836;
       padding: 5px 8px 5px 10px;
       display: inline-block;
 
@@ -1886,7 +1839,7 @@ div.exemptions-alerts {
         line-height: 1;
         -webkit-font-smoothing: antialiased;
         padding-left: 3px;
-        color: #1EB5FF;
+        color: #101836;
       }
 
       &:hover {
@@ -1899,7 +1852,7 @@ div.exemptions-alerts {
     }
 
     &:hover {
-      background-color: #1EB5FF;
+      background-color: #101836;
       color: white;
     }
   }
@@ -1960,7 +1913,7 @@ div.exemptions-alerts {
   .modal-content {
     padding: 20px;
     border-radius: 0;
-    border: 4px solid #1EB5FF;
+    //border: 4px solid #1EB5FF;
     background-clip: initial;
   }
 
@@ -1968,6 +1921,8 @@ div.exemptions-alerts {
     display: block;
     text-align: center;
     position: relative;
+    margin-bottom: 25px;
+
     &:before {
       content: "\E086";
       position: relative;
@@ -1979,7 +1934,7 @@ div.exemptions-alerts {
       line-height: 1;
       -webkit-font-smoothing: antialiased;
       /* padding-left: 3px; */
-      color: #1EB5FF;
+      color: #d1d1d2;
       font-size: 65px;
       vertical-align: middle;
       z-index: 2;
@@ -1994,7 +1949,7 @@ div.exemptions-alerts {
       content: "";
       width: 100%;
       height: 3px;
-      background-color: #1EB5FF;
+      background-color: #efefef;
       margin: auto;
       position: absolute;
       top: 50%;
@@ -2469,7 +2424,7 @@ div.exemptions-alerts {
     text-align: center;
   }
 
-  .entity-details .left-info.footer_section{
+  .entity-details .left-info.footer_section {
     display: none;
   }
 }
